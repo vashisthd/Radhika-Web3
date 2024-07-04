@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Make buttons circular */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.active {
+    background-color: #555; /* Change background color for active state */
+}
+
+.btn:active {
+    background-color: #666;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #ff7675;
+}
+
+.operator.active {
+    background-color: #ff6b6b; /* Change background color for active operator */
+}
+
+.operator:active {
+    background-color: #ff5252;
+}
+
+.calculator {
+    width: 360px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+    font-size: 2.5em;
+    border-bottom: 1px solid #444;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Make buttons circular */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.btn:active {
+    background-color: #666;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #ff7675;
+}
+
+.operator:hover {
+    background-color: #ff6b6b;
+}
+
+.operator:active {
+    background-color: #ff5252;
+}
+
+.clear {
+    background-color: #fdcb6e;
+}
+
+.clear:hover {
+    background-color: #fdbc60;
+}
+
+.clear:active {
+    background-color: #fca652;
+}
+
+.equals {
+    background-color: #00b894;
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background-color: #00a88b;
+}
+
+.equals:active {
+    background-color: #00997d;
+}
